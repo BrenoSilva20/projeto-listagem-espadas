@@ -1,0 +1,121 @@
+
+/*CORPO DA HTML*/
+body{
+  font-family: 'Gloria Hallelujah', sans-serif;
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #908e8ead;
+  color: #c0c0c0;
+}
+
+body.modo-escuro{
+  background-color: #181717;
+  color: #fffafa;
+}
+
+/* CABEÇALHO*/
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+header .logo, header .imagem-botao{
+  width: 30px;
+  transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+  background: none;
+  border: none;
+}
+
+header .logo:hover, header .imagem-botao:hover, main .cartao-espada:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* LISTAGEM */
+
+main{
+  padding: 25px;
+}
+
+main .listagem-espadas{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;;
+ }
+
+main .cartao-espada{
+  background-color: #615a5a;
+  width: 200px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+main .cartao-espada:hover{
+  background-color: #326e7cad;
+}
+
+.modo-escuro .cartao-espada{
+  background-color: #3a3c3e;
+  color: rgb(255, 255, 255);
+}
+
+/* TEXTO */
+
+main .cartao-espada .informacoes{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #333333;
+  border-radius: 10px;
+}
+
+main .cartao-espada .informacoes span{
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+main .cartao-espada .png{
+  width: 90px;
+  height: 145px;
+}
+
+main .cartao-espada .tipos{
+  display: flex;
+  gap: 15px;
+}
+
+main .cartao-espada .tipos{
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.espada{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+  color: #964b00;
+}
+
+.morte{
+  padding: 5px;
+  border-radius: 10px;
+  background-color:black;
+  color: #964b00;
+}
+
+main .descricao{
+  max-height: 80px;
+  overflow-y: scroll;
+  font-size: 14px;
+  padding-right: 10px;
+}
